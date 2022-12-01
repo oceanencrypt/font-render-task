@@ -82,13 +82,13 @@ def renderExceptHeading(data:dict=None):
     try:
         btn = renderBtn(data['type'], data['label'],)
         return f"""
-                <div class="global-font-family-except-headings-wrapper">' 
+                <div class="global-font-family-except-headings-wrapper">
                     {btn}
                     <div class="global-font-family-except-headings-selection-wrapper">
                         {renderSelect(data["select"])}
                     </div>
                     <p class="help-text">{data['help_text']}</p>
-                '</div>'
+                </div>
                """
     except Exception as e:
         console.log(f"Error in renderExceptHeading function: {e}")
@@ -98,13 +98,13 @@ def renderOnlyHeading(data:dict=None):
     try:
         btn = renderBtn(data['type'], data['label'],)
         return f"""
-                <div class="global-font-family-except-headings-wrapper">' 
+                <div class="global-font-family-except-headings-wrapper">
                     {btn}
                     <div class="global-font-family-except-headings-selection-wrapper">
                         {renderSelect(data["select"])}
                     </div>
                     <p class="help-text">{data['help_text']}</p>
-                '</div>'
+                </div>
                """
     except Exception as e:
         console.log(f"Error in renderOnlyHeading function: {e}")
